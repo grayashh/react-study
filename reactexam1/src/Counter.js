@@ -18,21 +18,21 @@ const Counter = () => {
   const [count2, setCount2] = useState(0);
 
   const onIncrease2 = () => {
-    setCount(count + 1);
+    setCount2(count + 1);
   };
   const onDecrease2 = () => {
-    setCount(count - 1);
+    setCount2(count - 1);
   };
 
   return (
     <div>
-      <h2>{count2}</h2>
-      <button onClick={onIncrease2}>+</button>
-      <button onClick={onDecrease2}>-</button>
-
       <h2>{count}</h2>
       <button onClick={onIncrease}>+</button>
       <button onClick={onDecrease}>-</button>
+
+      <h2>{count2}</h2>
+      <button onClick={onIncrease2}>+</button>
+      <button onClick={onDecrease2}>-</button>
     </div>
   );
 };
